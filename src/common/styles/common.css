@@ -1,0 +1,36 @@
+@import '~normalize.css';
+body {
+    margin: 30px 200px;
+    background-color: #fff;
+}
+
+.nav {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 10px;
+    color: skyBlue;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #333;
+    margin: 0 auto 10px;
+}
+
+.picture {
+    text-align: center;
+}
+
+.picture img {
+    width: 100px;
+}
