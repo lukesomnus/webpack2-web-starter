@@ -1,26 +1,28 @@
 {
-  "name":"webpack2-starter",
-  "version":"0.1.0",
-  "description":"webpack2 learning",
-  "repository":{
-    "type":"git",
-    "url":""
+  "name": "webpack2-starter",
+  "version": "0.1.0",
+  "description": "webpack2 learning",
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "author": {
-   "name": "Luke Lee",
-   "email": "lukelee140101@gmail.com"
- },
-  "license":"MIT",
+    "name": "Luke Lee",
+    "email": "lukelee140101@gmail.com"
+  },
+  "license": "MIT",
   "engines": {
-   "node": ">=6.8"
- },
+    "node": ">=6.8"
+  },
   "scripts": {
     "clean:dist": "rimraf -- dist",
     "start": " npm run server:dev",
     "server:dev": "cross-env NODE_ENV=development webpack-dev-server  --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --display-chunks --progress",
     "test": "cross-env NODE_ENV=test karma start --single-run",
-    "test:watch": "cross-env NODE_ENV=test karma start --reporters dots"
+    "test:watch": "cross-env NODE_ENV=test karma start --reporters dots",
+    "build:dev": "webpack-dev-server --env=dev --progress --profile --colors",
+    "build:dist": "webpack --env=prod --progress --profile --colors"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -42,9 +44,11 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0-rc.3",
+    "webpack-dashboard": "^0.3.0",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-dev-server": "^2.2.0-rc.0",
-    "webpack-hot-middleware": "^2.15.0"
+    "webpack-hot-middleware": "^2.15.0",
+    "webpack-merge": "^3.0.0"
   },
   "dependencies": {
     "express": "^4.14.0",
