@@ -1,0 +1,22 @@
+body{
+    /*记住*/
+    background: url('../images/about.jpg');
+    font-size: 40px;
+}
+.container{
+
+}
+.header{
+    height: 200px;
+}
+.monitor{
+    text-align: left;
+    height: 1500px;
+    overflow: scroll;
+}
+.monitor p {
+    padding: 20px 20px;
+    margin: 10px 60px; 
+    height: 60px;
+    border-bottom: solid 1px #000;
+}
