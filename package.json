@@ -1,4 +1,17 @@
 {
+  "name": "webpack-web-starter",
+  "version": "0.1.0",
+  "description": "a webpack development environment",
+  "keywords": [
+    "webpack",
+    "javscript",
+    "css"
+  ],
+  "author": "luke lee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukesomnus/webpack2-web-starter.git"
+  },
   "scripts": {
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env=dev\"",
     "build": "webpack --env=prod",

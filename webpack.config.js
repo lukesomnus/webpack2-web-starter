@@ -15,7 +15,6 @@ const cssnano = require('cssnano');
 const path = require('path');
 const glob = require('glob');
 
-console.log(path.resolve(__dirname,'app/images/'));
 
 const PATHS = {
     app: path.resolve(__dirname, 'app/js'),
