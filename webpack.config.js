@@ -6,6 +6,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 // 去除不需要的css
 const PurifyCSSPlugin = require('purifycss-webpack');
 
@@ -137,6 +138,10 @@ function developmentConfig() {
             new webpack.WatchIgnorePlugin([
                 path.join(__dirname, 'node_modules'),
             ]),
+            new OpenBrowserPlugin({
+                url:'http://localhost:3333/',
+                browser:'google chrome',
+            }),
         ],
     });
 }
